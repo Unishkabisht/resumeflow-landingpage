@@ -2,6 +2,10 @@
 
 ResumeFlow is a responsive landing page built for a fictional resume builder platform. The project showcases how a modern SaaS product would present itself to users, covering everything from the initial pitch to trust building sections like testimonials and FAQs.
 
+## Live Demo
+
+https://resumeflow-landingpage.vercel.app
+
 ## Overview
 
 This landing page walks a visitor through the full story of the product: what it does, how it works, what it offers, and why they should try it. It is built entirely with vanilla HTML, CSS, and JavaScript, with no frameworks or libraries involved.
@@ -46,6 +50,3 @@ The page follows a dark theme with a green and blue gradient accent, aiming for 
 
 Built by Unishka Bisht
 
-##live demo at
-
-resumeflow-landingpage.vercel.app
