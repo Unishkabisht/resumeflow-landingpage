@@ -39,10 +39,14 @@ h3,
 h4 {
     font-weight: 700;
     line-height: 1.2;
+    color: var(--text-color);
 }
+
 
 h1 {
     font-size: 4rem;
+   
+
 }
 
 h2 {
@@ -60,6 +64,7 @@ h2 {
 
 h3 {
     font-size: 1.25rem;
+     color: var(white);
 }
 
 a {
@@ -67,13 +72,15 @@ a {
     text-decoration: none;
 }
 
-/* 2. BUTTONS */
 .btn {
     display: inline-block;
     padding: 12px 24px;
     border-radius: 12px;
     font-weight: 600;
     transition: background-color 0.2s ease;
+    cursor: pointer;
+    border: none;
+    font-family: var(--font-family);
 }
 
 .btn-primary {
@@ -104,7 +111,6 @@ a {
     border-color: var(--accent-green);
 }
 
-/* 3. NAVBAR*/
 .navbar {
     border-bottom: 1px solid var(--border-color);
     padding: 20px 0;
@@ -142,7 +148,6 @@ a {
     color: var(--accent-green);
 }
 
-/* 4. HERO */
 .hero {
     text-align: center;
     padding: 100px 24px;
@@ -235,7 +240,6 @@ a {
     font-size: 0.9rem;
 }
 
-/* 5. STATS STRIP */
 .stats {
     display: flex;
     flex-wrap: wrap;
@@ -269,7 +273,6 @@ a {
     font-size: 0.9rem;
 }
 
-/* 6. HOW IT WORKS */
 .steps-list {
     list-style: none;
     counter-reset: step;
@@ -318,7 +321,6 @@ a {
     z-index: 1;
 }
 
-/* 7. CARDS (shared by features / templates / testimonials) */
 .card-grid {
     list-style: none;
     margin: 0;
@@ -368,7 +370,6 @@ a {
     transform: translateY(-2px);
 }
 
-/* 8. TEMPLATES */
 #templates {
     padding: 6rem 5%;
     text-align: center;
@@ -462,7 +463,6 @@ a {
     border-color: transparent;
 }
 
-/* 9. TESTIMONIALS */
 .stars {
     color: #facc15;
     margin-bottom: 16px;
@@ -504,7 +504,6 @@ a {
     min-width: 0;
 }
 
-/* 10. CTA BAND */
 .cta-band {
     display: flex;
     flex-direction: column;
@@ -525,7 +524,6 @@ a {
     margin: 0;
 }
 
-/* 11. FAQ */
 .faq {
     max-width: 800px;
     margin: 0 auto;
@@ -563,7 +561,6 @@ a {
     color: var(--text-muted);
 }
 
-/* 12. FOOTER */
 .footer {
     border-top: 1px solid var(--border-color);
     padding: 60px 24px 24px;
@@ -605,7 +602,6 @@ a {
     padding-top: 24px;
 }
 
-/* 13. RESPONSIVE */
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2rem;
@@ -657,5 +653,334 @@ a {
 
     .step-card:not(:last-child)::after {
         display: none;
+    }
+}
+
+.nav-cta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.modal-title {
+    font-size: 2rem;
+    color: var(--text-color);
+    margin-bottom: 8px;
+}
+
+.modal-subtitle {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 36px;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-field label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.form-field input {
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 13px 16px;
+    color: var(--text-color);
+    font-family: var(--font-family);
+    font-size: 0.95rem;
+    width: 100%;
+    transition: border-color 0.2s ease;
+}
+
+.form-field input:focus {
+    outline: none;
+    border-color: var(--accent-green);
+}
+
+.form-field input::placeholder {
+    color: var(--text-muted);
+}
+
+.password-field {
+    position: relative;
+}
+
+.password-field input {
+    padding-right: 44px;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 14px;
+    top: 38px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-muted);
+    font-size: 1rem;
+    line-height: 1;
+    padding: 4px;
+}
+
+.toggle-password:hover {
+    color: var(--accent-green);
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.85rem;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-muted);
+}
+
+.remember-me input {
+    accent-color: var(--accent-green);
+}
+
+.form-row a,
+.auth-switch a {
+    color: var(--accent-green);
+    font-weight: 600;
+}
+
+.form-row a:hover,
+.auth-switch a:hover {
+    text-decoration: underline;
+}
+
+.auth-form .btn {
+    width: 100%;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-family);
+    margin-top: 4px;
+}
+
+.auth-divider {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    margin: 28px 0;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: var(--border-color);
+}
+
+.social-row {
+    display: flex;
+    gap: 16px;
+}
+
+.btn-social {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    background: transparent;
+    color: var(--text-color);
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-social:hover {
+    border-color: var(--accent-green);
+    background-color: rgba(16, 217, 154, 0.06);
+}
+
+.btn-social svg {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+
+.auth-switch {
+    margin-top: auto;
+    padding-top: 32px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+dialog.modal-box {
+    display: none;
+}
+
+dialog.modal-box[open] {
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+
+dialog.modal-box::backdrop {
+    background: rgba(6, 8, 16, 0.75);
+}
+
+.modal-box {
+    width: 100%;
+    max-width: 440px;
+    max-height: 90vh;
+    overflow-y: auto;
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 44px 36px 36px;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
+    color: var(--text-color);
+}
+
+.modal-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    font-size: 1.5rem;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.modal-close:hover {
+    color: var(--accent-green);
+}
+
+.modal-box.with-image {
+    max-width: 920px;
+    max-height:600px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.modal-form-side {
+    flex: 1 1 55%;
+    padding: 44px 40px 36px;
+    overflow-y: auto;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-image-side {
+    flex: 1 1 45%;
+    min-height: 100%;
+    background: radial-gradient(ellipse at top left, #0e2a24 0%, #081824 60%, #060810 100%);
+    border-left: 1px solid var(--border-color);
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+    padding: 0;
+    overflow: hidden;
+}
+
+.modal-image-side img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .modal-image-side {
+        display: none;
+    }
+
+    dialog.modal-box[open] {
+        width: calc(100% - 32px);
+    }
+}
+
+/* AUTH FULL PAGE (Login / Signup) */
+.auth-page {
+    min-height: 100vh;
+    display: flex;
+    background-color: var(--bg-color);
+}
+
+.auth-form-side {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 48px 64px;
+    max-width: 560px;
+}
+
+.auth-logo {
+    margin-bottom: 48px;
+    font-size: 1.4rem;
+}
+
+.auth-image-side {
+    flex: 1 1 50%;
+    min-height: 100vh;
+    background: radial-gradient(ellipse at top left, #0e2a24 0%, #081824 60%, #060810 100%);
+    border-left: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    overflow: hidden;
+}
+
+.auth-image-side img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 16px;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 900px) {
+    .auth-image-side {
+        display: none;
+    }
+
+    .auth-form-side {
+        max-width: 100%;
+        padding: 40px 24px;
     }
 }

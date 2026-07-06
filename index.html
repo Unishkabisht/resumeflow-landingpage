@@ -13,7 +13,6 @@
 
 <body>
 
-    <!-- NAVBAR -->
     <header class="navbar">
         <nav class="nav container">
             <a href="#" class="logo">ResumeFlow</a>
@@ -23,36 +22,34 @@
                 <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="#faq">FAQ</a></li>
             </ul>
-            <a href="#hero" class="btn btn-outline">Get Started</a>
+            <p class="nav-cta">
+                <a href="login.html" class="btn btn-outline">Log In</a>
+                <a href="signup.html" class="btn btn-primary">Sign Up</a>
+            </p>
         </nav>
     </header>
 
     <!-- HERO -->
-    <section class="hero" id="hero">
-        <div class="container">
-            <span class="hero-badge">
-                <span class="badge-dot"></span>
-                Trusted by job seekers worldwide
-            </span>
-            <h1>
-                <span class="heading-white">Build a Resume</span>
-                <span class="heading-gradient">Recruiters Actually Notice</span>
-            </h1>
-            <p class="hero-subtext">
-                ResumeFlow gives you clean, ATS-friendly templates and step-by-step guidance
-                so you can create a professional resume in minutes — no design skills needed.
-            </p>
-            <form class="hero-form" onsubmit="return false;">
-                <label for="email" class="visually-hidden">Enter your email</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required />
-                <button type="submit" class="btn btn-primary btn-lg">Create My Resume</button>
-            </form>
-            <p class="reassurance">
-                <span>✅ No credit card required</span>
-                <span>✅ Free forever plan</span>
-                <span>✅ Export to PDF instantly</span>
-            </p>
-        </div>
+    <section class="hero container" id="hero">
+        <p class="hero-badge">Trusted by job seekers worldwide</p>
+        <h1>
+            Build a Resume<br />
+            <strong class="heading-gradient">Recruiters Actually Notice</strong>
+        </h1>
+        <p class="hero-subtext">
+            ResumeFlow gives you clean, ATS-friendly templates and step-by-step guidance
+            so you can create a professional resume in minutes — no design skills needed.
+        </p>
+        <form class="hero-form" onsubmit="return false;">
+            <label for="email" class="visually-hidden">Enter your email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required />
+            <button type="submit" class="btn btn-primary btn-lg">Create My Resume</button>
+        </form>
+        <ul class="reassurance">
+            <li>✅ No credit card required</li>
+            <li>✅ Free forever plan</li>
+            <li>✅ Export to PDF instantly</li>
+        </ul>
     </section>
 
     <!-- STATS -->
@@ -101,32 +98,32 @@
         <p class="section-subtext">Powerful tools that make resume building effortless.</p>
         <ul class="card-grid card-grid-3">
             <li class="card">
-                <div class="card-icon">⚡</div>
+                <i class="card-icon">⚡</i>
                 <h3>Real-Time Editing</h3>
                 <p>See your changes update instantly as you build your resume.</p>
             </li>
             <li class="card">
-                <div class="card-icon">🎯</div>
+                <i class="card-icon">🎯</i>
                 <h3>ATS-Optimized</h3>
                 <p>Every template is designed to pass applicant tracking systems.</p>
             </li>
             <li class="card">
-                <div class="card-icon">🧠</div>
+                <i class="card-icon">🧠</i>
                 <h3>Smart Suggestions</h3>
                 <p>Get wording and formatting tips tailored to your role.</p>
             </li>
             <li class="card">
-                <div class="card-icon">🎨</div>
+                <i class="card-icon">🎨</i>
                 <h3>Custom Themes</h3>
                 <p>Switch colors, fonts, and layouts to match your personal style.</p>
             </li>
             <li class="card">
-                <div class="card-icon">📄</div>
+                <i class="card-icon">📄</i>
                 <h3>One-Click Export</h3>
                 <p>Download a print-ready PDF whenever you're ready to apply.</p>
             </li>
             <li class="card">
-                <div class="card-icon">🔒</div>
+                <i class="card-icon">🔒</i>
                 <h3>Private & Secure</h3>
                 <p>Your data stays yours — always encrypted, never sold.</p>
             </li>
@@ -139,8 +136,8 @@
         <p>Templates crafted for every stage of your career.</p>
         <ul class="card-grid card-grid-3">
             <li class="template-card">
-                <img src="images/template-modern.png" alt="Modern resume template preview" class="template-preview" />
-                <span class="badge">Most Popular</span>
+                <img src="../images/1.jpeg" alt="Modern resume template preview" class="template-preview" />
+                <mark class="badge">Most Popular</mark>
                 <h3>Modern</h3>
                 <p class="role">For tech & creative roles</p>
                 <ul class="details">
@@ -151,8 +148,8 @@
                 <button type="button">Use This Template</button>
             </li>
             <li class="template-card">
-                <img src="images/template-professional.png" alt="Professional resume template preview" class="template-preview" />
-                <span class="badge">Classic</span>
+                <img src="../images/2.jpeg" alt="Professional resume template preview" class="template-preview" />
+                <mark class="badge">Classic</mark>
                 <h3>Professional</h3>
                 <p class="role">For corporate & finance roles</p>
                 <ul class="details">
@@ -163,8 +160,8 @@
                 <button type="button">Use This Template</button>
             </li>
             <li class="template-card">
-                <img src="images/template-simple.png" alt="Simple resume template preview" class="template-preview" />
-                <span class="badge">Minimal</span>
+                <img src="../images/3.jpeg" alt="Simple resume template preview" class="template-preview" />
+                <mark class="badge">Minimal</mark>
                 <h3>Simple</h3>
                 <p class="role">For students & fresh graduates</p>
                 <ul class="details">
@@ -183,23 +180,23 @@
         <p class="section-subtext">Real feedback from people who landed the job.</p>
         <ul class="card-grid card-grid-3">
             <li class="card testimonial-card">
-                <div class="stars">★★★★★</div>
+                <p class="stars">★★★★★</p>
                 <p class="quote">"I got three interview calls within a week of updating my resume with ResumeFlow."</p>
-                <div class="avatar">SP</div>
+                <b class="avatar">SP</b>
                 <h3>Sanya Patel</h3>
                 <p class="role">Marketing Executive</p>
             </li>
             <li class="card testimonial-card">
-                <div class="stars">★★★★★</div>
+                <p class="stars">★★★★★</p>
                 <p class="quote">"The templates are clean and the suggestions actually made my resume sound better."</p>
-                <div class="avatar">RK</div>
+                <b class="avatar">RK</b>
                 <h3>Rohan Kapoor</h3>
                 <p class="role">Software Developer</p>
             </li>
             <li class="card testimonial-card">
-                <div class="stars">★★★★★</div>
+                <p class="stars">★★★★★</p>
                 <p class="quote">"As a fresher, I had no idea how to format a resume. This made it painless."</p>
-                <div class="avatar">AN</div>
+                <b class="avatar">AN</b>
                 <h3>Anjali Nair</h3>
                 <p class="role">Recent Graduate</p>
             </li>
@@ -210,7 +207,7 @@
     <section class="cta-band">
         <h2>Ready to Build Your Resume?</h2>
         <p class="section-subtext">Join thousands of job seekers who found success with ResumeFlow.</p>
-        <a href="#hero" class="btn btn-primary btn-lg">Get Started for Free</a>
+        <button type="button" class="btn btn-primary btn-lg" data-open-modal="registerModal">Get Started for Free</button>
         <a href="#templates" class="btn btn-outline btn-lg">Browse Templates</a>
     </section>
 
@@ -238,44 +235,42 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="#" class="logo">ResumeFlow</a>
-                    <p>Helping job seekers build resumes that get results.</p>
-                </div>
-                <div class="footer-col">
-                    <h4>Product</h4>
-                    <ul>
-                        <li><a href="#features">Features</a></li>
-                        <li><a href="#templates">Templates</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Careers</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Resources</h4>
-                    <ul>
-                        <li><a href="#faq">FAQ</a></li>
-                        <li><a href="#">Blog</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Connect</h4>
-                    <ul>
-                        <li><a href="https://github.com/Unishkabisht" target="_blank" rel="noopener">GitHub</a></li>
-                        <li><a href="#">LinkedIn</a></li>
-                    </ul>
-                </div>
-            </div>
-            <p class="copyright">© <span id="year"></span> ResumeFlow. Built by Unishka Bisht. All rights reserved.</p>
-        </div>
+    <footer class="footer container">
+        <section class="footer-grid">
+            <section class="footer-brand">
+                <a href="#" class="logo">ResumeFlow</a>
+                <p>Helping job seekers build resumes that get results.</p>
+            </section>
+            <nav class="footer-col">
+                <h4>Product</h4>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#templates">Templates</a></li>
+                </ul>
+            </nav>
+            <nav class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </nav>
+            <nav class="footer-col">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </nav>
+            <nav class="footer-col">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="https://github.com/Unishkabisht" target="_blank" rel="noopener">GitHub</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </nav>
+        </section>
+        <p class="copyright">© <time id="year"></time> ResumeFlow. Built by Unishka Bisht. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
